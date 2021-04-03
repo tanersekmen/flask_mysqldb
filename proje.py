@@ -6,7 +6,9 @@ from flask_mysqldb import MySQL
 import sqlite3
 from functools import wraps
 
- # Kullanıcı Giriş Decorator
+ 
+ 
+ # Kullanici Giris Decorator
 
 
 
@@ -42,6 +44,7 @@ app  = Flask(__name__)
 app.secret_key = "ybblog"
 
 
+# Windows kullanicisi iseniz "localhost" olarak ayarlayabilirsiniz.
 app.config["MYSQL_HOST"] = "127.0.0.1"
 app.config["MYSQL_USER"] = "root"
 app.config["MYSQL_PASSWORD"] = ""
@@ -51,20 +54,20 @@ app.config["MYSQL_CURSORCLASS"] = "DictCursor"
 mysql = MySQL(app)
 
 
-
+# Ana sayfa
 @app.route("/")
 def index():
     return render_template("index.html")
 
 
-
+# Hakkimda yazisi
 @app.route("/about")
 def about():
     return render_template("about.html")
 
 
 
-# Makale Sayfası
+# Makale Sayfasi
 @app.route("/articles")
 def articles():
     cursor = mysql.connection.cursor()
@@ -78,7 +81,7 @@ def articles():
 
 
 
-## Dashboard Ekranı
+## Dashboard Ekrani
 @app.route("/dashboard")
 @login_required
 def dashboard():
@@ -96,7 +99,7 @@ def dashboard():
 
 
 
-# register - kayıt olma
+# register - kayit olma
 @app.route("/register", methods = ["GET","POST"] )
 def register():
     form = RegisterForm(request.form)
@@ -163,7 +166,7 @@ def login():
     return render_template("login.html", form = form)
 
 
-## Detay Sayfası
+## Detay Sayfasi
 @app.route("/article/<string:id>")
 def article(id):
     cursor = mysql.connection.cursor()
@@ -240,7 +243,7 @@ def delete(id):
 
 
 
-# Makale Güncelleme
+# Makale Guncelleme
 @app.route("/edit/<string:id>", methods= ["GET", "POST"])
 @login_required
 def update(id):
