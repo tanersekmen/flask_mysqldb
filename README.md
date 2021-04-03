@@ -2,7 +2,7 @@
 
 
 Mysql veritabanini localim üzerinde olusturup db kurulumlarını ve diger gereksinimleri orada ayarlamıs oldum
-# localhost/phpmyadmin 
+*localhost/phpmyadmin*  
 sudo 
 
 
