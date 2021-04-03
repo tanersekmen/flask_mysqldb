@@ -2,7 +2,6 @@
 
 {% block body %}
 
-
 {% if article %}
 
 <h4>{{article.title}}</h4>
@@ -14,11 +13,8 @@ Tarih : {{article.created_date}}
 {{article.content|safe}}
 
 
-
 {% else %}
 <div class= "alert alert-warning">Böyle bir makale bulunmuyor.</div>
-
-
 
 
 {% endif %}
