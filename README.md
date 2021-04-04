@@ -22,5 +22,5 @@ articles tarafinda ise
 email - username - id - article bilgileri saklanmali
 
 Not:
-- Arka planda xampp kesinlikle çalışmali
+- Arka planda xampp kesinlikle calismali
 - kodlar icerisinde values tarafinda degisken isimlendirmelerini ayarlayabilmeniz icin hazir biraktim.
