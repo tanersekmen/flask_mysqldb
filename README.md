@@ -15,11 +15,11 @@ Burada db tarafinda articles ve users yapilari mevcut olmali
 
 users tarafinda bunlara ait
 
-name - email - username - password bilgileri saklanmali 
+- name - email - username - password bilgileri saklanmali 
 
 articles tarafinda ise
 
-email - username - id - article bilgileri saklanmali
+- email - username - id - article bilgileri saklanmali
 
 Not:
 - Arka planda xampp kesinlikle calismali
