@@ -1,7 +1,7 @@
-Flask=1.1.2
-email-validator=1.1.2
-WTForms=2.3.3
-passlib=1.7.4
-Flask-MySQLdb=0.2.0
-db-sqlite3=0.0.1
-functools=0.5
+Flask==1.1.2
+email-validator==1.1.2
+WTForms==2.3.3
+passlib==1.7.4
+Flask-MySQLdb==0.2.0
+db-sqlite3==0.0.1
+functools==0.5
